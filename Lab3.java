@@ -12,12 +12,6 @@ import java.util.Scanner;
 
 
 class Lab3 {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Welcome to the Bank Program!");
-        System.out.println("This program allows you to perform various banking operations.");
-
-        System.out.print("Please enter your name: ");
-        String name = scanner.nextLine();
     
     //Initialize balance
     private double balance;
@@ -73,7 +67,12 @@ class Lab3 {
         return option;
     }
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to the Bank Program!");
+        System.out.println("This program allows you to perform various banking operations.");
 
+        System.out.print("Please enter your name: ");
+        String name = scanner.nextLine();
 
 
     }
