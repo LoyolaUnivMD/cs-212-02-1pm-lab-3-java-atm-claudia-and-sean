@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 class Lab3 {
     public static void main(String[] args) {
-       System.out.println("Welcome to Lab 3");
+       System.out.println("Welcome to Lab 3 test");
 
 
     }
