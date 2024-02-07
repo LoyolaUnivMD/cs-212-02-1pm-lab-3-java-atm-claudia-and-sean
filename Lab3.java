@@ -1,6 +1,6 @@
-// Programmers:  [your names here]
+// Programmers: Claudia and Sean
 // Course:  CS 212
-// Due Date:
+// Due Date: Feb 
 // Lab Assignment:
 // Problem Statement:
 // Data In:
@@ -10,7 +10,15 @@
 
 import java.util.Scanner;
 
+
 class Lab3 {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Welcome to the Bank Program!");
+        System.out.println("This program allows you to perform various banking operations.");
+
+        System.out.print("Please enter your name: ");
+        String name = scanner.nextLine();
+    
     //Initialize balance
     private double balance;
     Scanner input = new Scanner(System.in);
@@ -26,7 +34,7 @@ class Lab3 {
         //If user generated number is less than or equal to balance
         if (amount <= balance) {
             //Subtract user generated number from balance
-            balance-=amount;
+            balance -= amount;
         }
         else {
             //Output error message
