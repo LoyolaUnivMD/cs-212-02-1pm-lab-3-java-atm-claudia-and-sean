@@ -39,7 +39,7 @@ Main:
         1. Ask user amount they wish to withdraw
         2. Use number checking method to error check amount
         3. Call withdraw method for object with amount user chose
-    c. Othewise
+    c. Otherwise
         1. Output balance to user
     d. Ask user to choose new option
     e. Use menu option method to get new option
