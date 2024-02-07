@@ -65,14 +65,13 @@ class Lab3 {
         //Prompt user to enter which option they wish to choose
         System.out.println("Whether you want your receipt emailed or printed (printed or emailed)");
         String option = input.nextLine().trim().toLowerCase();
-        //Loop until user generated string is a valid option of four options (deposit, check balance, withdraw, or leave)
+        //Loop until user generated string is printed or emailed
         while(!option.equals("printed") && !option.equals("emailed")) {
             System.out.println("Invalid option, try again. (printed or emailed)");
             option = input.nextLine().trim().toLowerCase();
         }
         return option;
     }
-    //1. Loop until user generated string is either printed or emailed
     public static void main(String[] args) {
 
 
