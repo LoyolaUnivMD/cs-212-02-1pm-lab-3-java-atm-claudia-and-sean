@@ -13,7 +13,7 @@ import java.util.Scanner;
 class Lab3 {
     //Initialize balance
     private double balance;
-
+    Scanner input = new Scanner(System.in);
     public Lab3() {
         //Initialize balance as 212.9
         balance = 212.9;
@@ -34,14 +34,36 @@ class Lab3 {
         }
     }
     public String menuOption() {
-        System.out.println();
+        //Prompt user to enter which option they wish to choose
+        System.out.println("Please enter what you would like to do (deposit, check, withdraw, or leave)");
+        String option = input.nextLine().trim().toLowerCase();
+        //Loop until user generated string is a valid option of four options (deposit, check balance, withdraw, or leave)
+        while(!option.equals("deposit") && !option.equals("check") && !option.equals("withdraw") && !option.equals("leave")) {
+            System.out.println("Invalid option, try again.(deposit, check, withdraw, or leave)");
+            option = input.nextLine().trim().toLowerCase();
+        }
+        return option;
     }
-    //1. Loop until user generated string is a valid option of four options (deposit, check balance, withdraw, or leave)
-    //
-    //Check Number:
-    //1. Loop until user generated number is a valid and positive number
-    //
-    //Receipt option:
+
+    public double checkNumber(double number) {
+        //Loop until user generated number is a valid and positive number
+        while (number < 0) {
+            System.out.println("Please enter a positive number");
+            number = input.nextDouble();
+        }
+        return number;
+    }
+    public String recepitOption() {
+        //Prompt user to enter which option they wish to choose
+        System.out.println("Whether you want your receipt emailed or printed (printed or emailed)");
+        String option = input.nextLine().trim().toLowerCase();
+        //Loop until user generated string is a valid option of four options (deposit, check balance, withdraw, or leave)
+        while(!option.equals("printed") && !option.equals("emailed")) {
+            System.out.println("Invalid option, try again. (printed or emailed)");
+            option = input.nextLine().trim().toLowerCase();
+        }
+        return option;
+    }
     //1. Loop until user generated string is either printed or emailed
     public static void main(String[] args) {
 
