@@ -1,9 +1,52 @@
 Algorithm:
 
+Class:
+1. Create private double balance
+
+Constructor:
+1. Initialize balance as 212.9
+
+Deposit:
+1. Add user generated number to balance
+
+Withdraw:
+1. Subtract user generated number from balance
+
+Menu Option:
+1. Loop until user generated string is a valid option of four options (deposit, check balance, withdraw, or leave)
+
+Check Number:
+1. Loop until user generated number is a valid and positive number
+
+Receipt option:
+1. Loop until user generated string is either printed or emailed
+
+Main:
 1. Import Scanner
 2. Print the function of the program and put a greeting message.
 3. Ask user for their name
-4. Intialize the balance.
-5. Give the user four options, deposit, check balance, withdraw, or leave.
+4. Create new object with default balance.
+5. Use menu option method to get initial option
 6. Create a loop, until the user selects leave.
+    a. If user selects deposit
+        1. Ask user amount they wish to deposit
+        2. Use number checking method to error check amount
+        3. Call deposit method for object with amount user chose
+    b. Otherwise if user selects withdraw
+        1. Ask user amount they wish to withdraw
+        2. Use number checking method to error check amount
+        3. Call withdraw method for object with amount user chose
+    c. Othewise
+        1. Output balance to user
+    d. Ask user to choose new option
+    e. Use menu option method to get new option
+7. Use receipt option method to get receipt option
+8. If balance of object is greater than 212.9
+    a. Output balance - 212.9 as amount deposited
+9. Otherwise
+    b. Output 212.9 - balance as amount withdrawn
+10. If user chose receipt:
+    a. Output reminder to take receipt
+11. Otherwise:
+    a. Output reminder to check email
 
