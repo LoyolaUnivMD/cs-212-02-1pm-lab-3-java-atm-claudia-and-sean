@@ -10,7 +10,10 @@ Deposit:
 1. Add user generated number to balance
 
 Withdraw:
-1. Subtract user generated number from balance
+1. If user generated number is less than or equal to balance
+    a. Subtract user generated number from balance
+2. Otherwise
+    a. Output error message
 
 Menu Option:
 1. Loop until user generated string is a valid option of four options (deposit, check balance, withdraw, or leave)
