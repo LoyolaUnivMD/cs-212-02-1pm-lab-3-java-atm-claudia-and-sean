@@ -61,7 +61,7 @@ class Lab3 {
         }
         return number;
     }
-    public String recepitOption() {
+    public String receiptOption() {
         //Prompt user to enter which option they wish to choose
         System.out.println("Whether you want your receipt emailed or printed (printed or emailed)");
         String option = input.nextLine().trim().toLowerCase();
